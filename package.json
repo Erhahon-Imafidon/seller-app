@@ -24,7 +24,11 @@
     "react-native-web": "~0.19.10"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix --max-warnings=0",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
