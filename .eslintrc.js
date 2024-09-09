@@ -1,5 +1,6 @@
+/* eslint-env node */
 // https://docs.expo.dev/guides/using-eslint/
-export default {
+module.exports = {
     env: {
         node: true,
     },

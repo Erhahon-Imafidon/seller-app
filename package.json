@@ -33,7 +33,6 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
-    "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
     "typescript": "~5.3.3",
@@ -41,6 +40,7 @@
   },
   "private": true,
   "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
     "*.js": "eslint --cache --fix"
   }
 }
